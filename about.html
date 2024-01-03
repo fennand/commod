@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="bg-gray-200 text-black p-4 flex justify-between items-center"
+    >
+      <div class="flex items-center">
+        <image
+          src="/logo.png"
+          alt="Logo"
+          width="200"
+          height="200"
+          class="h-24 mr-2"
+        />
+      </div>
+
+      <nav>
+        <ul class="flex">
+          <li class="mr-4">
+            <a href="/">Home</a>
+          </li>
+          <li class="mr-4">
+            <a href="/about.html">About</a>
+          </li>
+          <li class="mr-4">
+            <a href="/services.html">Services</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="text-center bg-white">
+      <h1 class="text-3xl font-bold mb-4">About Us</h1>
+      <p class="mb-4 w-3/5 mx-auto text-xl">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+        eleifend feugiat sem, eget placerat orci. In vitae felis auctor nulla
+        mollis posuere. Curabitur pharetra venenatis odio, et porta massa
+        pulvinar ac. Etiam venenatis viverra faucibus. Nulla vestibulum dapibus
+        risus nec posuere.
+      </p>
+      <p class="mb-8 w-3/5 mx-auto text-xl">
+        Praesent vitae elit laoreet, cursus leo eu, ullamcorper dui. Nam ornare
+        ullamcorper justo id dictum. Nulla volutpat sed metus vel facilisis.
+        Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc a
+        nunc accumsan, pharetra dui quis, faucibus.
+      </p>
+      <h2 class="text-2xl font-bold mb-4">Our Team</h2>
+      <div class="flex flex-col items-center justify-center">
+        {/* Row 1 */}
+        <div class="flex justify-between w-2/3 mb-8">
+          {/* Card 1 */}
+          <div
+            class="max-w-md mx-24 p-4 border border-gray-300 rounded shadow-lg"
+          >
+            <h3 class="text-xl font-semibold mb-2">Team Member 1 Name</h3>
+            <p class="text-gray-500 mb-4">Job Title</p>
+            <image
+              src="/about1.jpg"
+              alt="Team Member 1"
+              className="w-full h-120 object-cover mb-4"
+              width="400"
+              height="400"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              felis metus, interdum egestas libero a, vestibulum iaculis sem.
+              Curabitur bibendum mi eget odio euismod, vitae gravida urna
+              porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
+              condimentum est vestibulum in. Duis auctor, erat sit amet
+              tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
+              odio nec urna. Proin tortor velit, pretium mollis convallis a,
+              rutrum id lorem. Phasellus faucibus posuere tortor id
+              pellentesque.
+            </p>
+            <p>
+              Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
+              Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
+              risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
+              ex congue molestie. Suspendisse potenti. Donec finibus
+              sollicitudin ornare. Pellentesque condimentum nibh ac diam
+              iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
+              Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
+              arcu.
+            </p>
+            <p>
+              Nullam venenatis varius consequat. Pellentesque nibh elit,
+              fermentum at vehicula non, volutpat nec libero. Pellentesque sed
+              tortor nec diam sodales vehicula. Donec ut nulla.
+            </p>
+          </div>
+
+          {/* Card 2 */}
+          <div
+            class="max-w-md mx-24 p-4 border border-gray-300 rounded shadow-lg"
+          >
+            <h3 class="text-xl font-semibold mb-2">Team Member 2 Name</h3>
+            <p class="text-gray-500 mb-4">Job Title</p>
+            <image
+              src="/about2.jpg"
+              alt="Team Member 2"
+              class="w-full h-120 object-cover mb-4"
+              width="400"
+              height="400"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              felis metus, interdum egestas libero a, vestibulum iaculis sem.
+              Curabitur bibendum mi eget odio euismod, vitae gravida urna
+              porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
+              condimentum est vestibulum in. Duis auctor, erat sit amet
+              tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
+              odio nec urna. Proin tortor velit, pretium mollis convallis a,
+              rutrum id lorem. Phasellus faucibus posuere tortor id
+              pellentesque.
+            </p>
+            <p>
+              Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
+              Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
+              risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
+              ex congue molestie. Suspendisse potenti. Donec finibus
+              sollicitudin ornare. Pellentesque condimentum nibh ac diam
+              iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
+              Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
+              arcu.
+            </p>
+            <p>
+              Nullam venenatis varius consequat. Pellentesque nibh elit,
+              fermentum at vehicula non, volutpat nec libero. Pellentesque sed
+              tortor nec diam sodales vehicula. Donec ut nulla.
+            </p>
+          </div>
+        </div>
+        {/* Row 2 */}
+        <div class="flex justify-between w-2/3 mb-8">
+          {/* Card 3 */}
+          <div
+            class="max-w-md mx-24 mb-4 p-4 border border-gray-300 rounded shadow-lg"
+          >
+            <h3 class="text-xl font-semibold mb-2">Team Member 3 Name</h3>
+            <p class="text-gray-500 mb-4">Job Title</p>
+            <image
+              src="/about3.jpg"
+              alt="Team Member 3"
+              class="w-full h-120 object-cover mb-4"
+              width="400"
+              height="400"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              felis metus, interdum egestas libero a, vestibulum iaculis sem.
+              Curabitur bibendum mi eget odio euismod, vitae gravida urna
+              porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
+              condimentum est vestibulum in. Duis auctor, erat sit amet
+              tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
+              odio nec urna. Proin tortor velit, pretium mollis convallis a,
+              rutrum id lorem. Phasellus faucibus posuere tortor id
+              pellentesque.
+            </p>
+            <p>
+              Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
+              Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
+              risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
+              ex congue molestie. Suspendisse potenti. Donec finibus
+              sollicitudin ornare. Pellentesque condimentum nibh ac diam
+              iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
+              Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
+              arcu.
+            </p>
+            <p>
+              Nullam venenatis varius consequat. Pellentesque nibh elit,
+              fermentum at vehicula non, volutpat nec libero. Pellentesque sed
+              tortor nec diam sodales vehicula. Donec ut nulla.
+            </p>
+          </div>
+
+          {/* Card 4 */}
+          <div
+            class="max-w-md mx-24 mb-4 p-4 border border-gray-300 rounded shadow-lg"
+          >
+            <h3 class="text-xl font-semibold mb-2">Team Member 4 Name</h3>
+            <p class="text-gray-500 mb-4">Job Title</p>
+            <image
+              src="/about4.jpg"
+              alt="Team Member 4"
+              class="w-full h-120 object-cover mb-4"
+              width="400"
+              height="400"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              felis metus, interdum egestas libero a, vestibulum iaculis sem.
+              Curabitur bibendum mi eget odio euismod, vitae gravida urna
+              porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
+              condimentum est vestibulum in. Duis auctor, erat sit amet
+              tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
+              odio nec urna. Proin tortor velit, pretium mollis convallis a,
+              rutrum id lorem. Phasellus faucibus posuere tortor id
+              pellentesque.
+            </p>
+            <p>
+              Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
+              Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
+              risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
+              ex congue molestie. Suspendisse potenti. Donec finibus
+              sollicitudin ornare. Pellentesque condimentum nibh ac diam
+              iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
+              Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
+              arcu.
+            </p>
+            <p>
+              Nullam venenatis varius consequat. Pellentesque nibh elit,
+              fermentum at vehicula non, volutpat nec libero. Pellentesque sed
+              tortor nec diam sodales vehicula. Donec ut nulla.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="bg-gray-200 text-black p-4 flex justify-between items-center"
+    >
+      <div class="flex items-center">
+        <image
+          src="/logo.png"
+          alt="Footer Logo"
+          width="200"
+          height="200"
+          class="h-24 mr-2"
+        />
+      </div>
+
+      <div class="text-right">
+        <p>9 Clarkston Road, Glasgow, G44 4EH UK</p>
+        <p>Email: saima@commoditylimited.com</p>
+        <p>Phone: +44 7821 117802</p>
+      </div>
+    </footer>
+  </body>
+</html>

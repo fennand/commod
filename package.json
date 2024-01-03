@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build": "npx postcss styles.css -o output.css --verbose"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0"
+  }
+}
