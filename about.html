@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link href="styles.css" rel="stylesheet" />
     <link href="output.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -12,31 +17,50 @@
       class="bg-gray-200 text-black p-4 flex justify-between items-center"
     >
       <div class="flex items-center">
-        <image
+        <img
           src="/logo.png"
           alt="Logo"
-          width="200"
-          height="200"
-          class="h-24 mr-2"
+          class="h-24 object-contain mr-2 sm:h-16 sm:object-contain sm:mr-1"
         />
       </div>
 
-      <nav>
-        <ul class="flex">
-          <li class="mr-4">
-            <a href="/">Home</a>
-          </li>
-          <li class="mr-4">
-            <a href="/about.html">About</a>
-          </li>
-          <li class="mr-4">
-            <a href="/services.html">Services</a>
-          </li>
-          <li>
-            <a href="/contact.html">Contact</a>
-          </li>
-        </ul>
+      <nav class="sm:hidden">
+        <!-- Burger menu icon -->
+        <button
+          id="burger-menu"
+          class="text-gray-800 focus:outline-none focus:text-gray-600"
+        >
+          <svg
+            class="h-6 w-6 fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M4 6h16M4 12h16m-7 6h7"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </button>
       </nav>
+
+      <!-- Menu items visible on larger screens -->
+      <ul class="hidden sm:flex sm:items-center sm:space-x-4">
+        <li>
+          <a href="/" class="text-gray-800">Home</a>
+        </li>
+        <li>
+          <a href="/about.html" class="text-gray-800">About</a>
+        </li>
+        <li>
+          <a href="/services.html" class="text-gray-800">Services</a>
+        </li>
+        <li>
+          <a href="/contact.html" class="text-gray-800">Contact</a>
+        </li>
+      </ul>
     </header>
     <main class="text-center bg-white">
       <h1 class="text-3xl font-bold mb-4">About Us</h1>
@@ -55,9 +79,7 @@
       </p>
       <h2 class="text-2xl font-bold mb-4">Our Team</h2>
       <div class="flex flex-col items-center justify-center">
-        {/* Row 1 */}
         <div class="flex justify-between w-2/3 mb-8">
-          {/* Card 1 */}
           <div
             class="max-w-md mx-24 p-4 border border-gray-300 rounded shadow-lg"
           >
@@ -98,7 +120,6 @@
             </p>
           </div>
 
-          {/* Card 2 */}
           <div
             class="max-w-md mx-24 p-4 border border-gray-300 rounded shadow-lg"
           >
@@ -139,9 +160,8 @@
             </p>
           </div>
         </div>
-        {/* Row 2 */}
+
         <div class="flex justify-between w-2/3 mb-8">
-          {/* Card 3 */}
           <div
             class="max-w-md mx-24 mb-4 p-4 border border-gray-300 rounded shadow-lg"
           >
@@ -182,7 +202,6 @@
             </p>
           </div>
 
-          {/* Card 4 */}
           <div
             class="max-w-md mx-24 mb-4 p-4 border border-gray-300 rounded shadow-lg"
           >
@@ -229,19 +248,23 @@
       class="bg-gray-200 text-black p-4 flex justify-between items-center"
     >
       <div class="flex items-center">
-        <image
+        <img
           src="/logo.png"
           alt="Footer Logo"
-          width="200"
-          height="200"
-          class="h-24 mr-2"
+          class="h-24 object-contain mr-2 sm:h-16 sm:object-contain sm:mr-1"
         />
       </div>
 
       <div class="text-right">
-        <p>9 Clarkston Road, Glasgow, G44 4EH UK</p>
-        <p>Email: saima@commoditylimited.com</p>
-        <p>Phone: +44 7821 117802</p>
+        <p class="text-xs sm:text-sm md:text-base lg:text-lg">
+          9 Clarkston Road, Glasgow, G44 4EH UK
+        </p>
+        <p class="text-xs sm:text-sm md:text-base lg:text-lg">
+          Email: saima@commoditylimited.com
+        </p>
+        <p class="text-xs sm:text-sm md:text-base lg:text-lg">
+          Phone: +44 7821 117802
+        </p>
       </div>
     </footer>
   </body>
