@@ -13,6 +13,8 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Header Section -->
+
     <header
       class="bg-gray-200 text-black p-4 flex justify-between items-center"
     >
@@ -62,188 +64,310 @@
         </li>
       </ul>
     </header>
+
+    <!-- Main Section -->
+
     <main class="text-center bg-white">
       <h1 class="text-3xl font-bold mb-4">About Us</h1>
-      <p class="mb-4 w-3/5 mx-auto text-xl">
+
+      <!-- Adjusting text size and width for smaller screens -->
+      <p class="mb-4 sm:text-base md:w-4/5 lg:w-4/5 xl:w-4/5 mx-auto text-xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
         eleifend feugiat sem, eget placerat orci. In vitae felis auctor nulla
         mollis posuere. Curabitur pharetra venenatis odio, et porta massa
         pulvinar ac. Etiam venenatis viverra faucibus. Nulla vestibulum dapibus
         risus nec posuere.
       </p>
-      <p class="mb-8 w-3/5 mx-auto text-xl">
+
+      <p class="mb-8 sm:text-base md:w-4/5 lg:w-4/5 xl:w-4/5 mx-auto text-xl">
         Praesent vitae elit laoreet, cursus leo eu, ullamcorper dui. Nam ornare
         ullamcorper justo id dictum. Nulla volutpat sed metus vel facilisis.
         Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc a
         nunc accumsan, pharetra dui quis, faucibus.
       </p>
+
       <h2 class="text-2xl font-bold mb-4">Our Team</h2>
-      <div class="flex flex-col items-center justify-center">
-        <div class="flex justify-between w-2/3 mb-8">
-          <div
-            class="max-w-md mx-24 p-4 border border-gray-300 rounded shadow-lg"
-          >
-            <h3 class="text-xl font-semibold mb-2">Team Member 1 Name</h3>
-            <p class="text-gray-500 mb-4">Job Title</p>
-            <image
-              src="/about1.jpg"
-              alt="Team Member 1"
-              className="w-full h-120 object-cover mb-4"
-              width="400"
-              height="400"
-            />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              felis metus, interdum egestas libero a, vestibulum iaculis sem.
-              Curabitur bibendum mi eget odio euismod, vitae gravida urna
-              porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
-              condimentum est vestibulum in. Duis auctor, erat sit amet
-              tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
-              odio nec urna. Proin tortor velit, pretium mollis convallis a,
-              rutrum id lorem. Phasellus faucibus posuere tortor id
-              pellentesque.
-            </p>
-            <p>
-              Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
-              Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
-              risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
-              ex congue molestie. Suspendisse potenti. Donec finibus
-              sollicitudin ornare. Pellentesque condimentum nibh ac diam
-              iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
-              Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
-              arcu.
-            </p>
-            <p>
-              Nullam venenatis varius consequat. Pellentesque nibh elit,
-              fermentum at vehicula non, volutpat nec libero. Pellentesque sed
-              tortor nec diam sodales vehicula. Donec ut nulla.
-            </p>
-          </div>
 
-          <div
-            class="max-w-md mx-24 p-4 border border-gray-300 rounded shadow-lg"
-          >
-            <h3 class="text-xl font-semibold mb-2">Team Member 2 Name</h3>
-            <p class="text-gray-500 mb-4">Job Title</p>
-            <image
-              src="/about2.jpg"
-              alt="Team Member 2"
-              class="w-full h-120 object-cover mb-4"
-              width="400"
-              height="400"
-            />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              felis metus, interdum egestas libero a, vestibulum iaculis sem.
-              Curabitur bibendum mi eget odio euismod, vitae gravida urna
-              porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
-              condimentum est vestibulum in. Duis auctor, erat sit amet
-              tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
-              odio nec urna. Proin tortor velit, pretium mollis convallis a,
-              rutrum id lorem. Phasellus faucibus posuere tortor id
-              pellentesque.
-            </p>
-            <p>
-              Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
-              Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
-              risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
-              ex congue molestie. Suspendisse potenti. Donec finibus
-              sollicitudin ornare. Pellentesque condimentum nibh ac diam
-              iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
-              Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
-              arcu.
-            </p>
-            <p>
-              Nullam venenatis varius consequat. Pellentesque nibh elit,
-              fermentum at vehicula non, volutpat nec libero. Pellentesque sed
-              tortor nec diam sodales vehicula. Donec ut nulla.
-            </p>
-          </div>
-        </div>
+      <!-- Team Members in a Column for smaller screens -->
+      <div class="flex flex-wrap justify-center items-start">
+        <div class="max-w-md mx-24 p-4 border border-gray-300 rounded shadow-lg mb-8 sm:w-2/5 md:w-2/5 lg:w-1/2 xl:w-1/2">
+          <h3 class="text-xl font-semibold mb-2">Team Member 1 Name</h3>
+          <p class="text-gray-500 mb-4" id="team-member-1-job">Job Title</p>
+          <image
+            src="/about1.jpg"
+            alt="Team Member 1"
+            class="w-full h-120 object-cover mb-4"
+            width="400"
+            height="400"
+          />
+          <p id="team-member-1-content" class="text-sm lg:text-lg hidden lg:block">
+            <!-- Display all the content on larger screens -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            felis metus, interdum egestas libero a, vestibulum iaculis sem.
+            Curabitur bibendum mi eget odio euismod, vitae gravida urna
+            porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
+            condimentum est vestibulum in. Duis auctor, erat sit amet
+            tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
+            odio nec urna. Proin tortor velit, pretium mollis convallis a,
+            rutrum id lorem.<br><br>
+            Phasellus faucibus posuere tortor id
+            pellentesque. Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
+            Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
+            risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
+            ex congue molestie. Suspendisse potenti. Donec finibus
+            sollicitudin ornare. Pellentesque condimentum nibh ac diam
+            iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
+            Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
+            arcu.<br><br>
+            Nullam venenatis varius consequat. Pellentesque nibh elit,
+            fermentum at vehicula non, volutpat nec libero. Pellentesque sed
+            tortor nec diam sodales vehicula. Donec ut nulla.
+          </p>
+          <p id="team-member-1-content-mobile" class="text-sm lg:hidden">
+            <!-- Display the first 20 words initially on smaller screens -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            felis metus, interdum egestas libero a, vestibulum iaculis sem.<br><br>
+            <span class="hidden" id="team-member-1-hidden-content">
+              <!-- The rest of the content -->
+            Curabitur bibendum mi eget odio euismod, vitae gravida urna
+            porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
+            condimentum est vestibulum in. Duis auctor, erat sit amet
+            tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
+            odio nec urna. Proin tortor velit, pretium mollis convallis a,
+            rutrum id lorem.<br><br>
+            Phasellus faucibus posuere tortor id pellentesque.
+            Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
+            Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
+            risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
+            ex congue molestie. Suspendisse potenti. Donec finibus
+            sollicitudin ornare. Pellentesque condimentum nibh ac diam
+            iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
+            Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
+            arcu.<br><br>
+            Nullam venenatis varius consequat. Pellentesque nibh elit,
+            fermentum at vehicula non, volutpat nec libero. Pellentesque sed
+            tortor nec diam sodales vehicula. Donec ut nulla.
+            </span>
+          </p>
+          <button
+    onclick="toggleReadMore('team-member-1-content', 'team-member-1-hidden-content', 'team-member-1-content-mobile')"
+    class="text-blue-500 hover:underline focus:outline-none lg:hidden"
+  >
+    Read More
+  </button>
+</div>
 
-        <div class="flex justify-between w-2/3 mb-8">
-          <div
-            class="max-w-md mx-24 mb-4 p-4 border border-gray-300 rounded shadow-lg"
-          >
-            <h3 class="text-xl font-semibold mb-2">Team Member 3 Name</h3>
-            <p class="text-gray-500 mb-4">Job Title</p>
-            <image
-              src="/about3.jpg"
-              alt="Team Member 3"
-              class="w-full h-120 object-cover mb-4"
-              width="400"
-              height="400"
-            />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              felis metus, interdum egestas libero a, vestibulum iaculis sem.
-              Curabitur bibendum mi eget odio euismod, vitae gravida urna
-              porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
-              condimentum est vestibulum in. Duis auctor, erat sit amet
-              tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
-              odio nec urna. Proin tortor velit, pretium mollis convallis a,
-              rutrum id lorem. Phasellus faucibus posuere tortor id
-              pellentesque.
-            </p>
-            <p>
-              Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
-              Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
-              risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
-              ex congue molestie. Suspendisse potenti. Donec finibus
-              sollicitudin ornare. Pellentesque condimentum nibh ac diam
-              iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
-              Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
-              arcu.
-            </p>
-            <p>
-              Nullam venenatis varius consequat. Pellentesque nibh elit,
-              fermentum at vehicula non, volutpat nec libero. Pellentesque sed
-              tortor nec diam sodales vehicula. Donec ut nulla.
-            </p>
-          </div>
-
-          <div
-            class="max-w-md mx-24 mb-4 p-4 border border-gray-300 rounded shadow-lg"
-          >
-            <h3 class="text-xl font-semibold mb-2">Team Member 4 Name</h3>
-            <p class="text-gray-500 mb-4">Job Title</p>
-            <image
-              src="/about4.jpg"
-              alt="Team Member 4"
-              class="w-full h-120 object-cover mb-4"
-              width="400"
-              height="400"
-            />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              felis metus, interdum egestas libero a, vestibulum iaculis sem.
-              Curabitur bibendum mi eget odio euismod, vitae gravida urna
-              porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
-              condimentum est vestibulum in. Duis auctor, erat sit amet
-              tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
-              odio nec urna. Proin tortor velit, pretium mollis convallis a,
-              rutrum id lorem. Phasellus faucibus posuere tortor id
-              pellentesque.
-            </p>
-            <p>
-              Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
-              Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
-              risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
-              ex congue molestie. Suspendisse potenti. Donec finibus
-              sollicitudin ornare. Pellentesque condimentum nibh ac diam
-              iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
-              Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
-              arcu.
-            </p>
-            <p>
-              Nullam venenatis varius consequat. Pellentesque nibh elit,
-              fermentum at vehicula non, volutpat nec libero. Pellentesque sed
-              tortor nec diam sodales vehicula. Donec ut nulla.
-            </p>
-          </div>
-        </div>
+<div class="max-w-md mx-24 p-4 border border-gray-300 rounded shadow-lg mb-8 sm:w-2/5 md:w-2/5 lg:w-1/2 xl:w-1/2">
+          <h3 class="text-xl font-semibold mb-2">Team Member 2 Name</h3>
+          <p class="text-gray-500 mb-4">Job Title</p>
+          <img
+            src="/about2.jpg"
+            alt="Team Member 2"
+            class="w-full h-120 object-cover mb-4"
+            width="400"
+            height="400"
+          />
+          <p id="team-member-2-content" class="text-sm lg:text-lg hidden lg:block">
+            <!-- Display all the content on larger screens -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            felis metus, interdum egestas libero a, vestibulum iaculis sem.
+            Curabitur bibendum mi eget odio euismod, vitae gravida urna
+            porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
+            condimentum est vestibulum in. Duis auctor, erat sit amet
+            tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
+            odio nec urna. Proin tortor velit, pretium mollis convallis a,
+            rutrum id lorem.<br><br>
+            Phasellus faucibus posuere tortor id pellentesque.
+            Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
+            Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
+            risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
+            ex congue molestie. Suspendisse potenti. Donec finibus
+            sollicitudin ornare. Pellentesque condimentum nibh ac diam
+            iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
+            Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
+            arcu.<br><br>
+            Nullam venenatis varius consequat. Pellentesque nibh elit,
+            fermentum at vehicula non, volutpat nec libero. Pellentesque sed
+            tortor nec diam sodales vehicula. Donec ut nulla.
+          </p>
+          <p id="team-member-2-content-mobile" class="text-sm lg:hidden">
+            <!-- Display the first 20 words initially on smaller screens -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            felis metus, interdum egestas libero a, vestibulum iaculis sem.<br><br>
+            
+            <span class="hidden" id="team-member-2-hidden-content">
+              <!-- The rest of the content -->
+            Curabitur bibendum mi eget odio euismod, vitae gravida urna
+            porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
+            condimentum est vestibulum in. Duis auctor, erat sit amet
+            tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
+            odio nec urna. Proin tortor velit, pretium mollis convallis a,
+            rutrum id lorem.<br><br>
+            Phasellus faucibus posuere tortor id pellentesque.
+            Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
+            Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
+            risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
+            ex congue molestie. Suspendisse potenti. Donec finibus
+            sollicitudin ornare. Pellentesque condimentum nibh ac diam
+            iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
+            Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
+            arcu.<br><br>
+            Nullam venenatis varius consequat. Pellentesque nibh elit,
+            fermentum at vehicula non, volutpat nec libero. Pellentesque sed
+            tortor nec diam sodales vehicula. Donec ut nulla.
+            </span>
+          </p>
+          <button
+          onclick="toggleReadMore('team-member-2-content', 'team-member-2-hidden-content', 'team-member-2-content-mobile')"
+          class="text-blue-500 hover:underline focus:outline-none lg:hidden"
+        >
+          Read More
+        </button>
       </div>
-    </main>
+    </div>
+
+    <div class="flex flex-wrap justify-center items-start">
+     <div class="max-w-md mx-24 p-4 border border-gray-300 rounded shadow-lg mb-8 sm:w-2/5 md:w-2/5 lg:w-1/2 xl:w-1/2">
+          <h3 class="text-xl font-semibold mb-2">Team Member 3 Name</h3>
+          <p class="text-gray-500 mb-4">Job Title</p>
+          <img
+            src="/about3.jpg"
+            alt="Team Member 3"
+            class="w-full h-120 object-cover mb-4"
+            width="400"
+            height="400"
+          />
+          <p id="team-member-3-content" class="text-sm lg:text-lg hidden lg:block">
+            <!-- Display all the content on larger screens -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            felis metus, interdum egestas libero a, vestibulum iaculis sem.
+            Curabitur bibendum mi eget odio euismod, vitae gravida urna
+            porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
+            condimentum est vestibulum in. Duis auctor, erat sit amet
+            tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
+            odio nec urna. Proin tortor velit, pretium mollis convallis a,
+            rutrum id lorem.<br><br>
+            Phasellus faucibus posuere tortor id pellentesque.
+            Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
+            Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
+            risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
+            ex congue molestie. Suspendisse potenti. Donec finibus
+            sollicitudin ornare. Pellentesque condimentum nibh ac diam
+            iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
+            Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
+            arcu.<br><br>
+            Nullam venenatis varius consequat. Pellentesque nibh elit,
+            fermentum at vehicula non, volutpat nec libero. Pellentesque sed
+            tortor nec diam sodales vehicula. Donec ut nulla.
+          </p>
+          <p id="team-member-3-content-mobile" class="text-sm lg:hidden">
+            <!-- Display the first 20 words initially on smaller screens -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            felis metus, interdum egestas libero a, vestibulum iaculis sem.<br><br>
+            
+            <span class="hidden" id="team-member-3-hidden-content">
+              <!-- The rest of the content -->
+            Curabitur bibendum mi eget odio euismod, vitae gravida urna
+            porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
+            condimentum est vestibulum in. Duis auctor, erat sit amet
+            tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
+            odio nec urna. Proin tortor velit, pretium mollis convallis a,
+            rutrum id lorem.<br><br>
+            Phasellus faucibus posuere tortor id pellentesque.
+            Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
+            Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
+            risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
+            ex congue molestie. Suspendisse potenti. Donec finibus
+            sollicitudin ornare. Pellentesque condimentum nibh ac diam
+            iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
+            Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
+            arcu.<br><br>
+            Nullam venenatis varius consequat. Pellentesque nibh elit,
+            fermentum at vehicula non, volutpat nec libero. Pellentesque sed
+            tortor nec diam sodales vehicula. Donec ut nulla.
+            </span>
+          </p>
+          <button
+          onclick="toggleReadMore('team-member-3-content', 'team-member-3-hidden-content', 'team-member-3-content-mobile')"
+          class="text-blue-500 hover:underline focus:outline-none lg:hidden"
+        >
+          Read More
+        </button>
+      </div>
+    
+
+    <div class="max-w-md mx-24 p-4 border border-gray-300 rounded shadow-lg mb-8 sm:w-2/5 md:w-2/5 lg:w-1/2 xl:w-1/2">
+          <h3 class="text-xl font-semibold mb-2">Team Member 4 Name</h3>
+          <p class="text-gray-500 mb-4">Job Title</p>
+          <img
+            src="/about4.jpg"
+            alt="Team Member 4"
+            class="w-full h-120 object-cover mb-4"
+            width="400"
+            height="400"
+          />
+          <p id="team-member-4-content" class="text-sm lg:text-lg hidden lg:block">
+            <!-- Display all the content on larger screens -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            felis metus, interdum egestas libero a, vestibulum iaculis sem.
+            Curabitur bibendum mi eget odio euismod, vitae gravida urna
+            porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
+            condimentum est vestibulum in. Duis auctor, erat sit amet
+            tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
+            odio nec urna. Proin tortor velit, pretium mollis convallis a,
+            rutrum id lorem.<br><br>
+            Phasellus faucibus posuere tortor id pellentesque.
+            Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
+            Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
+            risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
+            ex congue molestie. Suspendisse potenti. Donec finibus
+            sollicitudin ornare. Pellentesque condimentum nibh ac diam
+            iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
+            Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
+            arcu.<br><br>
+            Nullam venenatis varius consequat. Pellentesque nibh elit,
+            fermentum at vehicula non, volutpat nec libero. Pellentesque sed
+            tortor nec diam sodales vehicula. Donec ut nulla.
+          </p>
+          <p id="team-member-4-content-mobile" class="text-sm lg:hidden">
+            <!-- Display the first 20 words initially on smaller screens -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            felis metus, interdum egestas libero a, vestibulum iaculis sem.<br><br>
+            
+            <span class="hidden" id="team-member-4-hidden-content">
+              <!-- The rest of the content -->
+            Curabitur bibendum mi eget odio euismod, vitae gravida urna
+            porttitor. Sed a magna ex. Mauris interdum tellus lorem, ut
+            condimentum est vestibulum in. Duis auctor, erat sit amet
+            tincidunt vulputate, ante ipsum varius sapien, eu sagittis dolor
+            odio nec urna. Proin tortor velit, pretium mollis convallis a,
+            rutrum id lorem.<br><br>
+            Phasellus faucibus posuere tortor id pellentesque.
+            Fusce sed mauris ac lorem tincidunt scelerisque a quis urna.
+            Pellentesque porttitor dolor vitae lorem mattis vestibulum et at
+            risus. Sed tincidunt vel enim non mollis. Aenean rhoncus velit non
+            ex congue molestie. Suspendisse potenti. Donec finibus
+            sollicitudin ornare. Pellentesque condimentum nibh ac diam
+            iaculis, id consectetur ante ultricies. Aenean et cursus sapien.
+            Vestibulum vitae justo tempus, sollicitudin nulla eget, suscipit
+            arcu.<br><br>
+            Nullam venenatis varius consequat. Pellentesque nibh elit,
+            fermentum at vehicula non, volutpat nec libero. Pellentesque sed
+            tortor nec diam sodales vehicula. Donec ut nulla.
+            </span>
+          </p>
+          <button
+          onclick="toggleReadMore('team-member-4-content', 'team-member-4-hidden-content', 'team-member-4-content-mobile')"
+          class="text-blue-500 hover:underline focus:outline-none lg:hidden"
+        >
+          Read More
+        </button>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer Section -->
+
     <footer
       class="bg-gray-200 text-black p-4 flex justify-between items-center"
     >
@@ -269,3 +393,4 @@
     </footer>
   </body>
 </html>
+
